@@ -55,8 +55,10 @@
 			infinite: true
 		});
 		$( '#slider2' ).lemmonSlider({
-			infinite: true,
-            vertical: true
+            loop: false,
+			infinite: false,
+            vertical: true,
+            controls: '.controls_slider2'
 		});
 		alert('OK');
 
@@ -69,32 +71,32 @@
 	body div.slider li { float:left; list-style:none; margin:0 5px 0 0; }
 	body div.slider li { text-align:center; line-height:160px; font-size:25px; }
 
-	body div.slider-vertical   { overflow:hidden; position:relative; width:250px; height:500px !important; }
+	body div.slider-vertical   { overflow:hidden; position:relative; width:100px; height:500px !important; }
 	body div.slider-vertical ul { margin:0; padding:0; height:500px; }
 	body div.slider-vertical li { float:left; list-style:none; margin:5px 0 0 0; }
-	body div.slider-vertical li { text-align:center; line-height:160px; font-size:25px; }
+	body div.slider-vertical li { text-align:center; line-height:100px; font-size:25px; }
 	</style>
 		<div id="slider2" class="slider-vertical">
 			<ul>
-				<li><div style="width:200px;height:160px;background:#2aa198;"> 1</div></li>
-				<li><div style="width:250px;height:160px;background:#268bd2;"> 2</div></li>
-				<li><div style="width:100px;height:160px;background:#6c71c4;"> 3</div></li>
-				<li><div style="width:170px;height:160px;background:#d33682;"> 4</div></li>
-				<li><div style="width:300px;height:160px;background:#dc322f;"> 5</div></li>
-				<li><div style="width:200px;height:160px;background:#cb4b16;"> 6</div></li>
-				<li><div style="width:250px;height:160px;background:#b58900;"> 7</div></li>
+				<li><div style="width:100px;height:170px;background:#2aa198;"> 1</div></li>
+				<li><div style="width:100px;height:123px;background:#268bd2;"> 2</div></li>
+				<li><div style="width:100px;height:60px;background:#6c71c4;"> 3</div></li>
+				<li><div style="width:100px;height:159px;background:#d33682;"> 4</div></li>
+				<li><div style="width:100px;height:100px;background:#dc322f;"> 5</div></li>
+				<li><div style="width:100px;height:180px;background:#cb4b16;"> 6</div></li>
+				<li><div style="width:100px;height:160px;background:#b58900;"> 7</div></li>
 				<li><div style="width:100px;height:160px;background:#859900;"> 8</div></li>
-				<li><div style="width:200px;height:160px;background:#2aa198;"> 9</div></li>
-				<li><div style="width:250px;height:160px;background:#268bd2;">10</div></li>
+				<li><div style="width:100px;height:160px;background:#2aa198;"> 9</div></li>
+				<li><div style="width:100px;height:160px;background:#268bd2;">10</div></li>
 				<li><div style="width:100px;height:160px;background:#6c71c4;">11</div></li>
-				<li><div style="width:170px;height:160px;background:#d33682;">12</div></li>
-				<li><div style="width:300px;height:160px;background:#dc322f;">13</div></li>
-				<li><div style="width:200px;height:160px;background:#cb4b16;">14</div></li>
-				<li><div style="width:250px;height:160px;background:#b58900;">15</div></li>
+				<li><div style="width:100px;height:160px;background:#d33682;">12</div></li>
+				<li><div style="width:100px;height:160px;background:#dc322f;">13</div></li>
+				<li><div style="width:100px;height:160px;background:#cb4b16;">14</div></li>
+				<li><div style="width:100px;height:160px;background:#b58900;">15</div></li>
 				<li><div style="width:100px;height:160px;background:#859900;">16</div></li>
 			</ul>
 		</div>
-		<div class="controls">
+		<div class="controls_slider2">
 			<a href="#" class="prev-page">Prev Page</a> |
 			<a href="#" class="prev-slide">Prev Slide</a> |
 			<a href="#" class="next-slide">Next Slide</a> |
